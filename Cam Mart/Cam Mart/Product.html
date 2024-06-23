@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Specifying the wbsite icon -->
+  <link rel="icon" href="images/camera.png">
+
+  <!-- Link to the main CSS stylesheet whic his external CSS -->
+  <link rel="stylesheet" type="text/css" href="css/camm.css">
+
+   
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!--Including the awesome font library-->
+  <script src="https://kit.fontawesome.com/bc715aa43c.js" crossorigin="anonymous"></script>
+
+  <!--Title of the page-->
+  <title>Products</title>
+  
+     
+  <style>
+       /*Internal CSS for demonstration purposes*/
+        .heading{
+	        text-align: left;
+	        background-color:#005792;
+	        padding: 1 0 1 0;
+	        color: #FFFFFF;
+          margin-top: 1rem;
+          margin-right: 80%;
+    }
+        .slideshow {
+            
+            position:relative;
+            width:95%;
+            height:510px;
+            padding:0px;
+            margin:3px;
+           
+        }
+        .slideshow img {
+            width:103%;
+            height:482px;
+            margin:12px;
+            opacity: 0;
+            transition: opacity 1s;
+            position: absolute;
+            padding:1px;
+            object-fit:fill;
+            
+        }
+        .slideshow img.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <header>
+            <div class="nav-search">
+                <img src="images/camera.png"><!--Logo of our website-->
+
+            </div>
+       </header>
+        <a href="#" class="logo" style="font-family: montserrat">
+
+            <h4>Cam Mart</h4>	<!--Name of our website-->	
+        </a>
+
+        
+            <!--Menu of Navigation bar-->
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+  
+
+      <section id="product">
+         <hr style="border-color: #005792;">  <!--Inline CSS-->
+      </section>
+
+      <!--Searchbar-->
+    <div class="search">
+    <input type="text" placeholder="       Search....   ">
+    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+    
+  </div>
+  </div>
+  <div class="INTRO">
+   <!--Paragraph of the product page-->
+    <p class="INTRO-NAME ">Capture eternalizing moments using our incredible selection
+       of high-quality camera products.</p>
+  </div>
+  <div class="slideshow">
+    <img src="product img/simage1.png" class="active">
+    <img src="product img/simage2.jpg">
+    <img src="product img/simage3.jpg">
+</div>
+
+<!--Using japaScript for slideshow of the image-->
+<script>
+    var slides = document.querySelectorAll('.slideshow img');
+    var currentSlide = 0;
+    slides[currentSlide].classList.add('active');
+
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+
+  <h1 colour="yellow">Camera Products</h1>
+
+  <!--container of the product using div tag,images of the products using img tag, and using h3 and p tag for writing about the information related to the products-- and using button tag for creating button to buy products-->
+  <div class="product-container">
+    <div class="product">
+      <img src="product img/cam1.jpg" alt="Camera">
+      <h3>Canon EF 50mm f/1.8 STM Lens</h3>
+    <p>A prime lens with a fast aperture of f/1.8, perfect for portrait and low-light photography. Features a stepping motor (STM) for smooth and quiet autofocus.</p>
+      <p>Price:RS 14000</p>
+      <p>Discount: 30%</p>
+      <p>Discounted Price:RS 9800</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts2.jpg" alt="cam2">
+     <h3> Canon EP-EX15 Eyepiece Extender</h3>
+     <p>This Eyepiece Extends 5/8" (15mm) from the camera body and reduces viewfinder magnification by 30% thus giving    
+         you a wider view.</p>
+      <p>Price:RS 12000</p>
+      <p>Discount: 1O%</p>
+      <p>Discounted Price:RS 10800</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts3.jpg" alt="cam3">
+      <h3>Phantom Glass LCD Screen Protector (Fujifilm X-T20)</h3>
+      <p>Phantom Glass™ will resist most impacts and scratches, and ensure that your device is protected.
+        it won't peel or bubble like film protectors.</p>
+      <p>Price:RS 5500</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price:RS 9025</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts4.jpg" alt="cam4">
+      <h3>Nikon BF-1B Body Cap</h3>
+      <p>Can be placed on the camera body when no lens is attached to protect your camera from dust and moisture.</p>
+      <p>Price:RS 7000</p>
+      <p>Discount: 18%</p>
+      <p>Discounted Price:RS 5740</p>
+      <button>Add to Cart</button>
+    </div>
+   
+    <div class="product">
+      <img src="product img/camparts5.jpg" alt="Tripod">
+      <h3>Nikon BL-5 Battery Chamber Cover</h3>
+      <p>The BL-5 is a battery chamber cover for use when powering the D800/D800E D-SLR with the MB-D12 Battery Pack and using the EN-EL18 rechargeable lithium Ion battery. Battery not included.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts6.jpg" alt="Tripod">
+      <h3>Hoodman Corp HoodEYE Eyecup for Mirrorless Nikon Z Cameras</h3>
+      <p>HoodEYE eyecups link by your eye to the camera by comfortably sealing out ambient light. Eyecups are made of hypoallergenic silicon rubber for comfort.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts7.jpg" alt="Tripod">
+      <h3>Canon Canon Right Angle Finder C</h3>
+      <p>Provided with built-in variable diopter correction, supplied with Finder Adapters Ec-C Ed-C to fit any EOS camera.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <img src="product img/camparts8.jpg" alt="Tripod">
+      <h3>Nikon DG-2 Eyepiece Magnifier</h3>
+      <p>The DG-2 provides 2x magnification of the central area of the finder image. Useful for critical focusing in close-up photography.Eyesight adjustment provided.Requires an eyepiece adapter.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts9.jpg" alt="Tripod">
+      <h3>SanDisk Extreme PRO SDHC And SDXC UHS-I Memory Card (64GB)</h3>
+      <p>With shot speeds up to 140MB/s6 the card is perfect for capturing the action as it happens, without missing a beat.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts10.jpg" alt="Tripod">
+      <h3> Canon RF 24-70mm F2.8L IS USM</h3>
+      <p>Experience the possibilities with the RF 24-70mm F2.8L IS USM lens. Designed for the EOS R full-frame mirrorless camera system.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts11.jpg" alt="Tripod">
+      <h3>Nikon EN-EL15c Rechargeable Li-ion Battery</h3>
+      <p>The EN-EL15c is a Rechargeable Lithium-ion battery for use with select Nikon cameras. It can be charged using either the MH-25a battery charger or the EH-7P charging AC adapter.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts12.jpg" alt="Tripod">
+      <h3>Sirui N-2204SK Tripod Carbon Fiber Tripod</h3>
+      <p>The N-S Series Tripods are designed as a full featured tripod and represents the entry professional tripod in our line.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts13.jpg" alt="Tripod">
+      <h3>WANDRD Essential+ Camera Cube</h3>
+      <p>WANDRD's multi-purpose Camera Cubes are quite possibly the best camera protection system known to the human race.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts14.png" alt="Tripod">
+      <h3>Elinchrom D-LITE RX 4/4 Softbox To Go Kit </h3>
+      <p>The D-Lite RX 4 is one step up in the Elinchrom studio flash family, offering a robust case with ergonomic handle for harder working with larger accessories.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts15.jpg" alt="Tripod">
+      <h3> Tether Tools Relay Camera Coupler for Canon LPE10 Battery</h3>
+      <p>Relay Camera Couplers work in tandem with the Case Relay Camera Power System to keep your camera powered continually with an external 5V USB battery pack or wall power.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product img/camparts16.jpg" alt="Tripod">
+      <h3>Glide Gear SYL-960 Video Camera Track Dolly Hybrid</h3>
+      <p>The SYL-960 by Glidegear is an amazingly versatile track dolly. This unit will allow you to make world class professional films for a fraction of the price of some of the other upper end track dollys on the market.</p>
+      <p>Price: $50</p>
+      <p>Discount: 5%</p>
+      <p>Discounted Price: $47.50</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+  </div>
+
+  <!--Button of link to the blog page-->
+  <a href="http://127.0.0.1:5501/Cam%20Mart/blog.html" button class="linkbutton">Learn More</button></a>
+    
+ 
+ <!--Footer of the page-->
+ <footer id="footer">
+  <div class="footer">
+  <p class="Copyright">© Copyright 2023 Cam Mart</p>
+ </div>
+
+
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Import the 'Montserrat' font with a weight of 500 from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Import the 'Poppins' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{ /*This CSS affects whole body of the home page*/
+	margin:0px;
+	padding: 0px;
+	font-family:poppins;
+}
+
+/*CSS for Navigation bar*/
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#main{
+	width:100%;
+	height:100vh;
+	position: relative;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 5px 10px 30px rgba(0,0,0,0.02);
+	left: 0;
+	padding-top: 10px;
+	width:100%;
+	z-index: 1;
+	background-color: #FFFFFF;
+}
+
+.logo{        /*CSS for logo*/
+	height:45px;
+}
+
+ /*CSS for heading of home page*/
+  h4{      
+	display: block;
+	margin-block-start: 1.33em;
+	margin-block-end: 1.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+  }
+.contain{
+  color:#005792;
+  margin-top: -630px;
+  margin-left: 37%;
+  font-family: "montserrat", sans-serif;
+  	
+
+}
+ .contain h3{
+	font-size: 30px;
+	margin-top: -500px;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+/*CSS for paragaph of home page*/
+ .contain p{
+	line-height: -1px;
+	font-weight: 100;
+	margin-bottom: 0px;
+	
+
+}
+
+/*CSS for buttons of home page*/
+button{
+width:160px;
+padding:15px  ;
+text-align: center;
+margin: 20px 80px;
+border-radius: 25px;	
+font-weight: bold;
+background-color: #005792;
+font-family: "montserrat",sans-serif;
+border:none;
+cursor: pointer;
+color: white;
+margin-top: 60%;
+justify-content: center;
+margin-left: 2%;
+}
+ 
+/*CSS for hoverng of the buttons*/
+button:hover{
+	background-color: #67abdf;
+	transition: all ease 0.2s;
+}
